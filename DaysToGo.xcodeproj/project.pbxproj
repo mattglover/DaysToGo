@@ -97,12 +97,9 @@
 		B29FF78320BF420D00255640 /* DaysToGo */ = {
 			isa = PBXGroup;
 			children = (
-				B29FF78420BF420D00255640 /* AppDelegate.swift */,
-				B29FF78620BF420D00255640 /* ViewController.swift */,
-				B29FF78820BF420D00255640 /* Main.storyboard */,
-				B29FF78B20BF420D00255640 /* Assets.xcassets */,
-				B29FF78D20BF420D00255640 /* LaunchScreen.storyboard */,
-				B29FF79020BF420D00255640 /* Info.plist */,
+				B29FF7B320BF427A00255640 /* AppDelegate */,
+				B29FF7B420BF428700255640 /* ViewControllers */,
+				B29FF7B220BF423700255640 /* SupportingFiles */,
 			);
 			path = DaysToGo;
 			sourceTree = "<group>";
@@ -123,6 +120,33 @@
 				B29FF7A620BF420D00255640 /* Info.plist */,
 			);
 			path = DaysToGoUITests;
+			sourceTree = "<group>";
+		};
+		B29FF7B220BF423700255640 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF79020BF420D00255640 /* Info.plist */,
+				B29FF78D20BF420D00255640 /* LaunchScreen.storyboard */,
+				B29FF78820BF420D00255640 /* Main.storyboard */,
+				B29FF78B20BF420D00255640 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B29FF7B320BF427A00255640 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF78420BF420D00255640 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B29FF7B420BF428700255640 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF78620BF420D00255640 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,14 +454,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DaysToGo/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ZPM2H2GDXG;
+				INFOPLIST_FILE = DaysToGo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.DaysToGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.ToGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f7a8630-f8a6-4d3b-b008-f974e8b213e3";
+				PROVISIONING_PROFILE_SPECIFIER = "DaysToGo-Debug";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,14 +474,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DaysToGo/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DaysToGo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.DaysToGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.ToGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
