@@ -14,6 +14,7 @@
 		B29FF78F20BF420D00255640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29FF78D20BF420D00255640 /* LaunchScreen.storyboard */; };
 		B29FF79A20BF420D00255640 /* DaysToGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29FF79920BF420D00255640 /* DaysToGoTests.swift */; };
 		B29FF7A520BF420D00255640 /* DaysToGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29FF7A420BF420D00255640 /* DaysToGoUITests.swift */; };
+		B29FF7B720BF444100255640 /* DaysToGoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29FF7B620BF444100255640 /* DaysToGoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,20 @@
 			remoteGlobalIDString = B29FF78020BF420D00255640;
 			remoteInfo = DaysToGo;
 		};
+		B29FF7C020BF448500255640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29FF7BB20BF448500255640 /* DaysToGoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B29FF67220BF33DA00255640;
+			remoteInfo = DaysToGoKit;
+		};
+		B29FF7C220BF448500255640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29FF7BB20BF448500255640 /* DaysToGoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B29FF67B20BF33DA00255640;
+			remoteInfo = DaysToGoKitTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +62,8 @@
 		B29FF7A020BF420D00255640 /* DaysToGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaysToGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29FF7A420BF420D00255640 /* DaysToGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoUITests.swift; sourceTree = "<group>"; };
 		B29FF7A620BF420D00255640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29FF7B620BF444100255640 /* DaysToGoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaysToGoKit.framework; path = Carthage/Build/iOS/DaysToGoKit.framework; sourceTree = "<group>"; };
+		B29FF7BB20BF448500255640 /* DaysToGoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DaysToGoKit.xcodeproj; path = Carthage/Checkouts/DaysToGoKit/DaysToGoKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29FF7B720BF444100255640 /* DaysToGoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 				B29FF79820BF420D00255640 /* DaysToGoTests */,
 				B29FF7A320BF420D00255640 /* DaysToGoUITests */,
 				B29FF78220BF420D00255640 /* Products */,
+				B29FF7B520BF444000255640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +116,7 @@
 		B29FF78320BF420D00255640 /* DaysToGo */ = {
 			isa = PBXGroup;
 			children = (
+				B29FF7B920BF446900255640 /* Vendor */,
 				B29FF7B320BF427A00255640 /* AppDelegate */,
 				B29FF7B420BF428700255640 /* ViewControllers */,
 				B29FF7B220BF423700255640 /* SupportingFiles */,
@@ -149,6 +169,39 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		B29FF7B520BF444000255640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF7B620BF444100255640 /* DaysToGoKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B29FF7B920BF446900255640 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF7BA20BF447000255640 /* DaysToGoKit */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B29FF7BA20BF447000255640 /* DaysToGoKit */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF7BB20BF448500255640 /* DaysToGoKit.xcodeproj */,
+			);
+			path = DaysToGoKit;
+			sourceTree = "<group>";
+		};
+		B29FF7BC20BF448500255640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B29FF7C120BF448500255640 /* DaysToGoKit.framework */,
+				B29FF7C320BF448500255640 /* DaysToGoKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +212,8 @@
 				B29FF77D20BF420D00255640 /* Sources */,
 				B29FF77E20BF420D00255640 /* Frameworks */,
 				B29FF77F20BF420D00255640 /* Resources */,
+				B29FF7C420BF44A400255640 /* Build Carthage */,
+				B29FF7C520BF44C100255640 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +294,12 @@
 			mainGroup = B29FF77820BF420D00255640;
 			productRefGroup = B29FF78220BF420D00255640 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B29FF7BC20BF448500255640 /* Products */;
+					ProjectRef = B29FF7BB20BF448500255640 /* DaysToGoKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B29FF78020BF420D00255640 /* DaysToGo */,
@@ -247,6 +308,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B29FF7C120BF448500255640 /* DaysToGoKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DaysToGoKit.framework;
+			remoteRef = B29FF7C020BF448500255640 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B29FF7C320BF448500255640 /* DaysToGoKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DaysToGoKitTests.xctest;
+			remoteRef = B29FF7C220BF448500255640 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B29FF77F20BF420D00255640 /* Resources */ = {
@@ -274,6 +352,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B29FF7C420BF44A400255640 /* Build Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage build --platform \"$PLATFORM_NAME\" --project-directory \"$SRCROOT\"";
+		};
+		B29FF7C520BF44C100255640 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/DaysToGoKit.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DaysToGoKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B29FF77D20BF420D00255640 /* Sources */ = {
@@ -456,6 +567,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ZPM2H2GDXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DaysToGo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +591,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DaysToGo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

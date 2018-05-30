@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/DaysToGoKit"]
+	path = Carthage/Checkouts/DaysToGoKit
+	url = https://github.com/mattglover/DaysToGoKit.git
